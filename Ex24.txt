@@ -1,0 +1,23 @@
+<script src="//d3js.org/d3.v7.min.js"></script> 
+ 
+<script> 
+let intr = d3.interpolate( [20, 40, 4], [1, 12, 10]) 
+ 
+console.log("Type of returned function is: ", typeof (intr) ); 
+ 
+console.log( intr(0.2) ) 
+
+//[16.2, 34.4, 5.2]
+/*
+
+The interpolate method returns a function to be able to get any number between the values.
+If the value put as input were 0.5 it would return the exact middle point between the two numbers:
+[10.5, 26, 7].
+
+However, in this case it returns numbers closer to the first set of numbers.
+If we imagined a line between the numbers with a length of 1, this function returns the number at the position input in the method.
+
+*/
+
+</script> 
+
